@@ -1,0 +1,45 @@
+<ion-view view-title="Rain Drop" cache-view="false" >
+	<ion-nav-buttons side="right">
+  
+	  <label class="toggle">
+	   <input type="checkbox" ng-change="startSensor()" ng-model="sensor.state">
+	   <div class="track">
+	     <div class="handle"></div>
+	   </div>
+	</label>
+     </ion-nav-buttons>
+   
+    
+  	<ion-content class="padding">
+		<div class="list card">
+		
+		  <div class="item item-avatar">
+		    <img src="img/rain.jpeg">
+		    <h2>This is Rain Drop sensor simulator</h2>
+		   
+		   <div class="list">
+			  <label class="item item-input">
+			    <span class="input-label">Device ID</span>
+			    <input type="text" ng-model="sensor.clientid" name="clientid">
+			  </label>
+			  <label class="item item-input">
+			    <span class="input-label">Low</span>
+			    <input type="text" ng-model="sensor.low" name="low">
+			  </label>
+			   <label class="item item-input">
+			    <span class="input-label">High</span>
+			    <input type="text" ng-model="sensor.high" name="high">
+			  </label>
+			</div>
+
+		  </div>
+		
+		  <div class="item item-image sensor-number">
+		 	{{sensor.valueDisplay}}
+		  </div>	
+			
+		
+		</div>
+    </ion-content>
+    
+</ion-view>
