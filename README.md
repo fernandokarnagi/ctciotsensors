@@ -1,15 +1,13 @@
 # Ionics Sensor Mobile Application
-Number:
-1. Item 1
-2. Item 2
-3. Item 3
+This is a working sample of Android and iOS Hybrid mobile application, powered by Ionics which simulates Sensors
 
-Ordered
-* Item a
-* Item b
+These are what this application does:
 
-Dashed
-- Dash 1
-- Dash 2
+1. Send heart pulse signal every second
+2. Send temparature reading every second
+3. Send rain drop reading every second
 
+These are the backend system:
 
+1. IBM MessageSights - MQTT
+2. IBM Cloudant - NoSQL
